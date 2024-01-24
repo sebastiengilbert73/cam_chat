@@ -7,9 +7,7 @@ def video_identity():
 
 demo = gr.Interface(video_identity,
                     gr.Video(sources=['webcam']),
-                    "playable_video",
-                    examples=[os.path.join(os.path.dirname(__file__), "video/video_sample.mp4")],
-                    cache_examples=True
+                    "playable_video"
                     )
 
 if __name__ == '__main__':
