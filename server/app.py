@@ -6,9 +6,8 @@ def video_identity():
     return video
 
 demo = gr.Interface(video_identity,
-                    gr.Video(sources=['webcam']),
-                    "playable_video",
-                    include_audio=True
+                    gr.Video(sources=['webcam'], include_audio=True),
+                    "playable_video"
                     )
 
 if __name__ == '__main__':
